@@ -5,7 +5,7 @@ from django.urls import reverse
 from django.views import generic
 
 from .models import Choice, Question
-
+from django.utils import timezone
 
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
